@@ -1,0 +1,54 @@
+* {
+	font-family: "Sansita", sans-serif;
+    color:black;
+}
+
+header{
+    background-color: beige;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border: 1px solid rgba(0,0,0,0.1)
+}
+img{
+    min-width: 100px;
+    
+}
+
+nav{
+   background-color: grey;
+   margin: 0 auto;
+   max-width: 100%;
+}
+
+nav a{
+display: block;
+color:#fff;
+text-align: center;
+padding: 1rem;
+}
+
+nav a:hover{
+    border: 2px solid #fff;
+}
+main{
+    max-width: 800px;
+    justify-content: center;
+}
+.card{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+footer{
+    background-color: beige;
+}
+
+h2, h3 {
+    background-color: beige;
+}
+
+li{
+    list-style-type: none;
+}
