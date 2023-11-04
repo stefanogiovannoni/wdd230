@@ -7,6 +7,9 @@
     nav a{
         flex: 1 1 100%;
     }
+    h2{
+        width:  100%;
+    }
     .card{
         display: grid;
         grid-template-columns: 1fr 1fr;
