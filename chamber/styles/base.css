@@ -30,6 +30,42 @@ nav a:hover{
         border: 2px solid #fff;
 }
 
+.page{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr ;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-areas: 
+		"sidebar main main main"
+		"sidebar main main main"
+		"sidebar main main main"
+		"sidebar content1 content2 content3"
+		"sidebar content1 content2 content3"
+	;
+	gap: 3px;
+	height: 100%;
+
+}
+#main{
+	grid-area: main;
+background-color: red;
+}
+#sidebar{
+	grid-area: sidebar;
+	background-color: blue;
+}
+#content1{
+	grid-area: content1;
+	background-color: yellow;
+}
+#content2{
+	grid-area: content2;
+	background-color: green;
+}
+#content3{
+	grid-area: content3;
+	background-color: violet;
+}
+
 #menu {
 	font-size: 1.5rem;
 	border: 1px solid rgba(0,0,0,.3);
