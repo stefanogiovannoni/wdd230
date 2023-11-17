@@ -12,10 +12,49 @@
     nav {
         display: flex;
         justify-content: space-around;
+		background-color: #396E94;
+		padding: 1em; 
+		width: 100%;
     }
+
     nav a{
         flex: 1 1 100%;
+		width: 100%;
     }
+	.page{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr ;
+		grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+		grid-template-areas: 
+			"sidebar main main main"
+			"sidebar main main main"
+			"sidebar main main main"
+			"sidebar content1 content2 content3"
+			"sidebar content1 content2 content3";
+		gap: 3px;
+		height: 100%;
+	
+	}
+	#main{
+		grid-area: main;
+	background-color: red;
+	}
+	#sidebar{
+		grid-area: sidebar;
+		background-color: blue;
+	}
+	#content1{
+		grid-area: content1;
+		background-color: yellow;
+	}
+	#content2{
+		grid-area: content2;
+		background-color: green;
+	}
+	#content3{
+		grid-area: content3;
+		background-color: violet;
+	}
 
 	#menu {
 		display: none; /* hide hamburger button */
@@ -23,10 +62,12 @@
 
 	.navigation {
 		flex-direction: row;
+		width: 100%;
 	}
 
 	.navigation li {
 		display: block;
 		flex: 1 1 100%;
+		width: 100%;
 	}
 }

@@ -13,11 +13,7 @@ header{
     padding: 1em;
 }
 
-nav{
-    
-    background-color: #396E94;
-    padding: 1em;    
-}
+
 
 nav a{
     display: block;
@@ -29,22 +25,25 @@ nav a{
 nav a:hover{
         border: 2px solid #fff;
 }
+footer{
+    color: white;
+    background-color: #396E94;
+    padding: 1em;    
+}
+
 
 .page{
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr ;
-	grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-columns: 1fr;
 	grid-template-areas: 
-		"sidebar main main main"
-		"sidebar main main main"
-		"sidebar main main main"
-		"sidebar content1 content2 content3"
-		"sidebar content1 content2 content3"
+	"main"
+	"sidebar"
+	"content1"
+	"content2"
+	"content3"
 	;
-	gap: 3px;
-	height: 100%;
-
+	
 }
+
 #main{
 	grid-area: main;
 background-color: red;
@@ -89,8 +88,10 @@ background-color: red;
 .navigation {
 	display: flex;
 	flex-direction: column;
+	width: 100%;
 	list-style: none;
-	background-color: #333;
+	text-align: center;
+	background-color: #396E94;
 	color: #fff;
 }
 .navigation li {
@@ -99,7 +100,6 @@ background-color: red;
 
 .navigation li a {
 	display: block;
-	padding: 1rem;
 	text-align: center;
 	text-decoration: none;
 	color: #fff;
@@ -118,4 +118,7 @@ background-color: red;
 }
 .open li a {
 	display: block;
+}
+li{
+	list-style-type: none;
 }

@@ -7,10 +7,21 @@
     nav {
         display: flex;
         justify-content: space-around;
+        color: #fff;
+        background-color: black;
+        margin: 0 auto;
+        max-width: 100%;
+    
     }
     nav a{
         flex: 1 1 100%;
+		width: 100%;
     }
+    nav a:hover{
+        background-color: #bbb;
+	    color: #333;
+    }
+   
     h2{
         width:  100%;
     }
@@ -24,9 +35,7 @@
     }
     
     .card{
-        grid-area: c1;    
-        
-        
+        grid-area: c1;       
     }
 
     .card2{
@@ -36,12 +45,15 @@
     
     .navigation {
 		flex-direction: row;
-        margin: 0;
+        padding: 1rem;
+        margin: 0 auto;
+        width: 100%;
 	}
     
     .navigation li {
 		display: block;
 		flex: 1 1 100%;
+        
 	}
     #menu {
 		display: none; /* hide hamburger button */
