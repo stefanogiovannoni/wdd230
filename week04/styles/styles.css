@@ -1,0 +1,25 @@
+:root{
+    --back: rgb(0, 0, 0);
+    --back2: grey;
+    --fontcolor: white;
+	--back3: rgb(35, 163, 163);
+	--border: hsla(0,0%,20%,.8);
+}
+
+table{
+    margin: 10px auto;
+    
+    
+}
+
+caption{
+    caption-side: bottom;
+}
+
+th {
+	padding: 7px 15px;
+    border-top: thin solid var(--border);
+    border-left: thin solid var(--border);
+    border-right: thin solid var(--border);
+    border-bottom: thin solid var(--border);
+}
