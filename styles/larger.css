@@ -21,6 +21,11 @@
         background-color: #bbb;
 	    color: #333;
     }
+
+    .hero img{
+        width: 100%;
+        height: auto;
+    }
    
     h2{
         width:  100%;
@@ -58,6 +63,27 @@
     #menu {
 		display: none; /* hide hamburger button */
 	}
+
     
+    /* LABEL ROME ITALY TEMPLE */
+
+.herolabel{
+	position: absolute;
+	top: 500px;
+	left: 300px;
+	background: radial-gradient(#fff, #894d97);
+	border: 1px solid rgba(0,0,0,.75);
+	box-shadow: 0 0 3rem #fff;
+	opacity: 0.75;
+	
+}
+
+.herolabel p {
+	margin: 0;
+	padding: 1rem;
+	font-weight: 700;
+	font-weight: 2rem;
+}
+
     
 }

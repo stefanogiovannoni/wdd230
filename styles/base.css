@@ -17,6 +17,7 @@ img{
 
 main{
     width: 100%;
+	margin: 0 auto;
     
 }
 
@@ -110,6 +111,29 @@ ul.navigation {
     margin: 0;
 }
 
+/* LABEL ROME ITALY TEMPLE */
+
+.herolabel{
+	position: absolute;
+	top: 350px;
+	left: 35px;
+	background: radial-gradient(#fff, #894d97);
+	border: 1px solid rgba(0,0,0,.75);
+	box-shadow: 0 0 3rem #fff;
+	opacity: 0.75;
+	
+}
+
+.herolabel p {
+	margin: 0;
+	padding: 1rem;
+	font-weight: 700;
+	font-weight: 2rem;
+}
+
+iframe{
+	width: 100%;
+}
 
 
 

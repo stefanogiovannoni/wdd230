@@ -22,7 +22,7 @@
 <body>
     <header>
         <div id="mode">🕶️</div>
-        <img src="images/me.jpg" alt="Good looking Stefano" width="10%" height="10%">
+        <img src="images/me.webp" alt="Good looking Stefano" loading="lazy" width="10%" height="10%">
         <h1>Stefano Giovanoni</h1>
         
     </header>
@@ -36,6 +36,16 @@
         </ul>
     </nav>
     <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-small.webp" loading="lazy" width="500" heigth="250" media="(max-width: 600px)">
+                <source srcset="images/hero-medium.webp" loading="lazy" width="1000" heigth="500" media="(max-width: 1000px)">
+                <img src="images/hero-large.webp" alt="Italy, Rome Temple" loading="lazy" width="1000" heigth="500">
+            </picture>
+            <div class="herolabel">
+                <p>Rome Italy Temple</p>
+            </div>
+        </div>
         <h2>WDD 230: Web Frontend Development</h2>
         <hr>
         <div class="section-grid">
@@ -54,10 +64,11 @@
             <h3>Information</h3>
             <p>City, Country</p>
             <p>Weather</p>
-            <p>Page Visits</p>
+            <p><span class="label">Page Visits: </span><span class="visits"></span></p>
         </section>
         </div>
     </main>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.7582497323633!2d-58.411497999999995!3d-34.58498310000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb57de086a5f7%3A0xd3b40283a7a337fc!2sJuncal%203358%2C%20C1425AYT%20CABA!5e0!3m2!1ses-419!2sar!4v1700784142203!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     <footer>
         <p>©<span id="year"></span> Copyrights Stefano Giovanoni, Argentina</p>
         <p>Last modified: <span id="lastModified">></span></p>
