@@ -69,21 +69,21 @@ function displayRatingValue() {
 //Page visit counter
 
 
-const visitsDisplay = document.querySelector(".nvisits");
+
+const visitsDisplay = document.querySelector(".visitsnumber");
 
 
-let numVisits = Number(window.localStorage.getItem("numVisits-ls")) || 0;
+let numVisits = Number(window.localStorage.getItem("number-of-visits")) || 0;
 
 
 if (numVisits !== 0) {
-	visitsDisplay.textContent = numVisits;
+    visitsDisplay.textContent = numVisits;
 } else {
-	visitsDisplay.textContent = `This is your first time here. Awesome! `;
+    visitsDisplay.textContent = `This is your very first visit.  Amazing!`;
 }
 
 
 numVisits++;
 
 
-localStorage.setItem("numVisits-ls", numVisits);
-
+localStorage.setItem("number-of-visits", numVisits);
