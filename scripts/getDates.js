@@ -69,7 +69,7 @@ function displayRatingValue() {
 //Page visit counter
 
 
-const visitsDisplay = document.querySelector(".visits");
+const visitsDisplay = document.querySelector(".nvisits");
 
 
 let numVisits = Number(window.localStorage.getItem("numVisits-ls")) || 0;
