@@ -22,7 +22,7 @@
 <body>
     <header>
         <div id="mode">🕶️</div>
-        <img src="images/me.jpg" alt="Good looking Stefano" width="10%" height="10%">
+        <img src="images/me.webp" alt="Good looking Stefano" width="10%" height="10%">
         <h1>Stefano Giovanoni</h1>
         
     </header>
@@ -42,11 +42,11 @@
         <form method="get" action="record.html">
             <fieldset>
                 <legend>Join Us Form</legend>
-                <label >Username <input id="" type="text" name="uname" required></label>
-                <label >Password <input id="keyphrase" type="password" name="password" required pattern="[A-Za-z]{8}"> </label>
-                <label >Password Confirmation <input id="keyphrase2" type="password" name="password" required pattern="[A-Za-z]{8}"> </label>
-                <label >Email <input id="" type="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid email address"> </label>
-                <label >Page Rating </label>
+                <label class="top" >Username* <input id="" type="text" name="uname" required></label>
+                <label class="top">Password* <input id="keyphrase" type="password" name="password" required pattern="[A-Za-z]{8}"> </label>
+                <label class="top">Password Confirmation* <input id="keyphrase2" type="password" name="password" required pattern="[A-Za-z]{8}"> </label>
+                <label class="top">Email* <input id="" type="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid email address"> </label>
+                <label class="top">Page Rating </label>
                     <div id="rangevalue">1</div>
                     <input type="range" id="r" name="r" min="1" max="10" value="1" step="1" list="rangevalues"> 
                     <datalist id="rangevalues">
