@@ -1,6 +1,6 @@
 :root{
     --back: rgb(0, 0, 0);
-    --back2: grey;
+    --back2: rgba(58, 58, 58, 0.781);
     --fontcolor: white;
 	--back3: rgb(35, 163, 163);
 	--border: hsla(0,0%,20%,.8);
@@ -8,18 +8,32 @@
 
 table{
     margin: 10px auto;
+    border: thin solid var(--back);
+    border-collapse: collapse;
     
-    
+}
+ thead tr:first-child th, .black  {
+	background-color: var(--back);
+	color: var(--fontcolor);
+}
+
+.grey {
+    background-color: var(--back2);
+    color: var(--fontcolor);
 }
 
 caption{
     caption-side: bottom;
+    
 }
 
-th {
+
+
+tbody tr:nth-child(even) {
+	background-color: var(--back3);
+}
+
+tr, th {
 	padding: 7px 15px;
-    border-top: thin solid var(--border);
-    border-left: thin solid var(--border);
-    border-right: thin solid var(--border);
-    border-bottom: thin solid var(--border);
+	border: 1px solid var(--back);
 }
