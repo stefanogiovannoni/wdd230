@@ -1,0 +1,34 @@
+{
+    "familyName" : "Giovanoni",
+    "dateMoved": " July 20th",
+    "numberFamily" : 5,
+    "bishopric" : true,
+    "members" : [
+        {
+            "name": "Roberto",
+            "gender" : "Male",
+            "dob" : " November 16th"
+        },
+        {
+            "name": "Karina",
+            "gender" : "Female",
+            "dob" : "September 20th"
+        },
+        {
+            "name": "Stefano",
+            "gender" : "Male",
+            "dob" : "October 23th"
+        },
+        {
+            "name": "Gianluca",
+            "gender" : "Male",
+            "dob" : "August 11th"
+        },
+        {
+            "name": "Fiorella",
+            "gender" : "Female",
+            "dob" : "May 5th"
+        }
+    ]  
+
+}
