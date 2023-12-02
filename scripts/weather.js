@@ -27,7 +27,6 @@ function displayResults(data) {
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', 'png of${desc}');
     captionDesc.textContent = `${desc}`;
-    
 
 }
 

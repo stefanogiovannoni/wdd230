@@ -66,24 +66,7 @@ function displayRatingValue() {
     rangevalue.innerHTML = range.value;
 }
 
-//Page visit counter
 
 
 
-const visitsDisplay = document.querySelector(".visitsnumber");
 
-
-let numVisits = Number(window.localStorage.getItem("number-of-visits")) || 0;
-
-
-if (numVisits !== 0) {
-    visitsDisplay.textContent = numVisits;
-} else {
-    visitsDisplay.textContent = `This is your very first visit.  Amazing!`;
-}
-
-
-numVisits++;
-
-
-localStorage.setItem("number-of-visits", numVisits);
