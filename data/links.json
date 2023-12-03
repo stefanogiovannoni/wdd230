@@ -1,0 +1,103 @@
+{
+    "weeks": [
+        {
+            "week": "Week 1",
+            "links": [
+                {
+                    "url": "week01/holygrail.html",
+                    "title": "Layout"        
+                },
+                {
+                    "url": "week01/media-query.html",
+                    "title": "Queries"   
+                },
+                {
+                    "url": "https://codepen.io/Stefano-Giovanoni/pen/QWYyGZV",
+                    "title": "Applied JavaScript"   
+                }
+            ] 
+        },
+        {
+            "week": "Week 2",
+            "links": [
+                {
+                    "url": "https://codepen.io/Stefano-Giovanoni/pen/BaMWwpq",
+                    "title": "Hamburger"        
+                },
+                {
+                    "url": "week02/bom.html",
+                    "title": "BOM"   
+                },
+                {
+                    "url": "week02/Design.html",
+                    "title": "Design"   
+                }
+            ] 
+        },
+        {
+            "week": "Week 3",
+            "links": [
+                {
+                    "url": "https://stefanogiovannoni.github.io/wdd230/week03/images/landscape.webp",
+                    "title": "WebP"        
+                },
+                {
+                    "url": "week03/lazyload.html",
+                    "title": "Lazy Load"   
+                },
+                {
+                    "url": "week03/responsive-images.html",
+                    "title": "Responsive Images"   
+                },
+                {
+                    "url": "week03/bom.html",
+                    "title": "Local Storage"   
+                }
+                
+            ] 
+        },
+        {
+            "week": "Week 4",
+            "links": [
+                {
+                    "url": "https://codepen.io/Stefano-Giovanoni/pen/dyamLXY",
+                    "title": "Pseudo Classes"        
+                },
+                {
+                    "url": "week04/images/Combinators.png",
+                    "title": "Combinators"   
+                },
+                {
+                    "url": "week04/tablebuild.html",
+                    "title": "Table Data Presentation"   
+                },
+                {
+                    "url": "week04/form-start/form-start/index.html",
+                    "title": "Forms"   
+                }
+            ] 
+        },
+        {
+            "week": "Week 5",
+            "links": [
+                {
+                    "url": "https://codepen.io/Stefano-Giovanoni/pen/xxMJvxW",
+                    "title": "Pseudo-Elements"        
+                },
+                {
+                    "url": "week05/new-ward-members.json",
+                    "title": "JSON"   
+                },
+                {
+                    "url": "week05/prophets.html",
+                    "title": "Prophets"   
+                },
+                {
+                    "url": "week05/weather.html",
+                    "title": "Weather API"   
+                }
+            ] 
+        }
+        
+    ]
+}
