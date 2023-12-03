@@ -13,13 +13,13 @@ async function getLinks() {
 getLinks();
 
 function displayLinks(weeks) {
-    weeks.forEach(week => {
+    weeks.forEach((week) => {
         const li = document.createElement("li");
         li.innerHTML = `${week.week}:`
-        week.links.forEach(links => {
+        week.links.forEach((links) => {
             li.innerHTML += `<a href="${links.url}">${links.title}</a> |`
         })
-        li.innerHTML = li.innerHTML.slice(0, -1);
+        
         ul.appendChild(li);
     });
 }
