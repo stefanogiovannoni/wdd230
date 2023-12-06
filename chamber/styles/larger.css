@@ -55,6 +55,7 @@
 	#m{
 		grid-area: m;
 	background-color: red;
+	color:white;
 	}
 	#d{
 		grid-area: d;
