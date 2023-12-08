@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:url"  content="https://stefanogiovannoni.github.io/wdd230/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title"  content=">Palermo Chamber of Commerce" />
+    <meta property="og:image" content="https://th.bing.com/th/id/OIP.eUs9n6okjaqnniOXgPb3LQHaDt?pid=ImgDet&rs=1" />
+    <title> Palermo Chamber of Commerce</title>
+    <link href="styles/normalize.css" rel="stylesheet" /> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="images/favicon.ico" rel="icon"  type="image/x-icon" >
+    <link href="styles/base.css" rel="stylesheet" /> 
+    <link href="styles/larger.css" rel="stylesheet" /> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <meta name="Stefano Giovanoni" content="The Palermo Chamber of Commerce serves the city as the main host and leader in promoting economic growth. We help communities to strenghen relationships to improve our local economies and our way of living by hosting presentations alongside with networking events. " />
+</head>
+<body>
+    <header>
+        <h1>Palermo Chamber of Commerce</h1>        
+    </header>
+    <nav>
+        <button id="menu"></button>
+        <ul class="navigation">
+            <li><a href="index.html" title="Home">Home</a></li>
+            <li><a href="discover.html" title="Discover">Discover</a></li>
+            <li><a href="join.html" title="Form">Join Us</a></li>
+            <li><a href="#" title="Contact">Contact Us</a></li>                     
+        </ul>
+    </nav>
+    <main class="fb">
+        <div class="form">
+                <h1>Become Part</h1>
+                    <form method="get" action="thankyou.html">
+                        <fieldset>
+                            <legend>Applicant information</legend>
+                            <label class="top">First Name: <input id="firstname" type="text" name="firstname" required></label>
+                            <label class="top">Last Name: <input id="lastname" type="text" name="lnalastnameme" required></label>
+                            <label class="top">Title: <input id="title" type="text" name="title" required pattern="[a-zA-Z\- ]{7,}"> </label>               
+                            <label class="top">Email: <input id="email" type="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid email address" placeholder="you@gmail.com"> </label>
+                            <label class="top">Phone: <input id="phone" type="tel" name="phone" ></label>
+                            <label class="top">Business/Organization Name: <input id="business" type="text" name="business"  required></label>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Membership </legend>
+                            <label class="top"> Membership Selection
+                                <select name="selection">
+                                    <option value="">Please Select &#9662;</option>
+                            <option value="np" > NP Membership</option>
+                            <option  value="bm"> Bronze Membership</option>
+                            <option  value="sm"> Silver Membership</option>               
+                            <option  value="gm"> Gold Membership</option>
+                            </select>
+                            <label class="top">Description: <textarea id="description"  name="description"></textarea></label>
+                            <input id="timestamp" type="hidden" name="timestamp">
+                            </label>
+                        </fieldset>
+                        <input type="submit" value="Join Us" class="submitBtn" >                        
+                    </form>                       
+        </div>
+        <div class="benefits">
+            <h1>Membersip Benefits</h1>
+            <h3  style="color:white; background-color: black;">NP Membership</h3>
+            <ul>
+                <li>Invitations to events</li>
+                <li>10% of Discounts on Fridays</li>
+                <li>Annual Reports</li>
+            </ul>
+            <h3 style="color:brown; background-color: black;">Bronze Membership</h3>
+            <ul>
+                <li>Invitations to events</li>
+                <li>20% of Discounts on Fridays & Saturdays</li>
+                <li>Montly Reports</li>
+            </ul>
+            <h3 style="color:rgb(199, 196, 196); background-color: black;">Silver Membership</h3>
+            <ul>
+                <li>Invitations to events</li>
+                <li>40% of Discounts on Fridays & Saturdays</li>
+                <li>Weekly Reports</li>
+            </ul>
+            <h3 style="color:rgb(229, 255, 0); background-color: black;">Gold Membership</h3>
+            <ul>
+                <li>Invitations to events and to VIPs spaces</li>
+                <li>50% Every Day</li>
+                <li>Weekly Reports</li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <p>©<span id="year"></span> Copyrights Stefano Giovanoni, Argentina</p>
+        <p> Contact: 1234-4321</p>
+        <p> WDD 230 Chamber of Commerce Project</p>
+        <p>Last modified: <span id="lastModified">></span></p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/form.js"></script>     
+</body>
+</html>
