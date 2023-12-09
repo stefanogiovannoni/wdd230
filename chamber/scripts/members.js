@@ -1,5 +1,5 @@
 const baseURL = "https://stefanogiovannoni.github.io/wdd230/";
-const url = "https://stefanogiovannoni.github.io/wdd230/data/members.json";
+const url = "";
 const members = document.querySelector("members");
 
 async function getMembersData()
