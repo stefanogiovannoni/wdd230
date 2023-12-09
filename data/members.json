@@ -1,0 +1,94 @@
+{
+    "members": [
+        {
+            "name": "Alphabet",
+            "address": "Alphabet Inc. 1600 Amphitheater Parkway, Mountain View (California)",
+            "phonenumber": "(650) 253-0000",
+            "weburl": "http://abc.xyz/",
+            "imageurl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Alphabet_Inc_Logo_2015.svg/1280px-Alphabet_Inc_Logo_2015.svg.png",
+            "membership": "Gold",
+            "order": 1,
+            "founded": "2 October 2015",
+            "employees": "190,234"
+            
+        },
+        {
+            "name": "Amazon",
+            "address": "410 Terry Ave N, Seattle 98109, (Washington)",
+            "phonenumber": "(888) 280-4331",
+            "weburl": "https://www.amazon.com",
+            "imageurl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/320px-Amazon_logo.svg.png",
+            "membership": "Gold",
+            "order": 2,
+            "founded": "July 5 1994",
+            "employees": "1,541,000"
+        },
+        {
+            "name": "Globant",
+            "address": "5 rue Guillaume Kroll, L-1882, Luxembourg",
+            "phonenumber": "(877) 215-5230",
+            "weburl": "https://www.globant.com/",
+            "imageurl": "https://statics.globant.com/production/public/2022-08/globant-logo.jpg",
+            "membership": "Silver",
+            "order": 3,
+            "founded": "23 October 2003",
+            "employees": "27,000"
+        },
+        {
+            "name": "JP Morgan Chase & Co.",
+            "address": "270 Park Avenue, New York, (New York)",
+            "phonenumber": "(212) 270-6000",
+            "weburl": "https://www.jpmorgan.com/global",
+            "imageurl": "https://media.designrush.com/inspiration_images/134937/conversions/_1511454480_993_jpmorgan-mobile.jpg",
+            "membership": "Silver",
+            "order": 4,
+            "founded": "11 August 1871",
+            "employees": "308,669"
+        },
+        {
+            "name": "Meta",
+            "address": "One Hacker Way, Menlo Park (California)",
+            "phonenumber": "(650) 543-4800",
+            "weburl": "https://www.meta.com/",
+            "imageurl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPUEWOJ9CVu3Eo8lcUjV4b5omRDo_K4Rr1Ob33AHJ3OQ&s",
+            "membership": "Bronze",
+            "order": 5,
+            "founded": "5 May 2004",
+            "employees": "86,482"
+        },
+        {
+            "name": "Microsoft",
+            "address": "1 Microsoft Way, Redmond, (Washington)",
+            "phonenumber": "(800) 865-9408",
+            "weburl": "https://www.microsoft.com/es-ar/",
+            "imageurl": "https://seeklogo.com/images/M/microsoft-logo-8EE94BD68A-seeklogo.com.png",
+            "membership": "Bronze",
+            "order": 6,
+            "founded": "4 April 1975",
+            "employees": "221.000"
+        },
+        {
+            "name": "SAP",
+            "address": "Walldorf, Baden-Württemberg, Germany",
+            "phonenumber": "(800) 008-584",
+            "weburl": "https://www.sap.com/latinamerica/index.html",
+            "imageurl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/SAP-Logo.svg/2560px-SAP-Logo.svg.png",
+            "membership": "NP",
+            "order": 7,
+            "founded": "1 April 1972",
+            "employees": "111,961"
+        },
+        {
+            "name": "Tesla",
+            "address": "1 Tesla Road Austin, (Texas)",
+            "phonenumber": "(800) 68-6705",
+            "weburl": "https://www.tesla.com/",
+            "imageurl": "https://cdn4.iconfinder.com/data/icons/flat-brand-logo-2/512/tesla-512.png",
+            "membership": "NP",
+            "order": 8,
+            "founded": "1 July 2003",
+            "employees": "127,000"
+        }
+       
+    ]
+}
