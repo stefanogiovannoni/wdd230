@@ -107,5 +107,27 @@
 		border-radius: 10px;
 		padding: .75rem 0;
 	}
-	  
+	/* directory */
+	.list section {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 2fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        margin: 0;
+		font-size: small;
+    }
+       
+    .list section a {
+        margin-top: 10px;
+    }
+	.list section h2 {
+        font-size: medium;
+		text-align: left;
+    }
+    .grid section {
+        text-align: center;
+        min-height: 100px;
+    }
+	.grid a {
+		font-size: 50%;
+	}
 }

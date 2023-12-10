@@ -1,6 +1,6 @@
 const baseURL = "https://stefanogiovannoni.github.io/wdd230/";
-const url = "";
-const members = document.querySelector("members");
+const url = "https://stefanogiovannoni.github.io/wdd230/chamber/data/members.json";
+const article = document.querySelector("article");
 
 async function getMembersData()
 {
@@ -11,17 +11,17 @@ async function getMembersData()
 
 getMembersData();
 
-const displayMembers = (members) => {
+function displayMembers (members) {
     members.forEach(member => {
-        let card = document.createElement("section");
-        let imageurl = document.createElement("img");
-        let name = document.createElement("h2");
-        let address = document.createElement("p");
-        let phonenumber = document.createElement("p");
-        let weburl = document.createElement("a");
-        let membership = document.createElement("p");
-        let founded = document.createElement("p");
-        let employees = document.createElement("p");
+        const card = document.createElement("section");
+        const imageurl = document.createElement("img");
+        const name = document.createElement("h2");
+        const address = document.createElement("p");
+        const phonenumber = document.createElement("p");
+        const weburl = document.createElement("a");
+        const membership = document.createElement("p");
+        const founded = document.createElement("p");
+        const employees = document.createElement("p");
         
         
         
@@ -34,17 +34,22 @@ const displayMembers = (members) => {
         name.textContent = `${member.name}`;
 
         address.textContent = `${member.address}`;
+        address.setAttribute("class", "address");
 
         phonenumber.textContent = `${member.phonenumber}`;
+        phonenumber.setAttribute("class", "phonenumber");
 
-        weburl.textContent = `${member.weburl}`;
-        weburl.setAttribute = `"href", ${member.weburl}`;
+        weburl.textContent = member.weburl;
+        weburl.setAttribute("href", member.weburl);
 
-        membership.textContent = `${member.membership}`;
+        membership.textContent = `Membership: ${member.membership}`;
+        membership.setAttribute("class", "membership");
 
-        founded.textContent = `${member.founded}`;
+        founded.textContent = `Founded: ${member.founded}`;
+        founded.setAttribute("class", "founded");
 
-        employees.textContent = `${member.employees}`;
+        employees.textContent = `Employees: ${member.employees}`;
+        employees.setAttribute("class", "employees");
 
         card.appendChild(imageurl);
         card.appendChild(name);
@@ -55,6 +60,6 @@ const displayMembers = (members) => {
         card.appendChild(founded);
         card.appendChild(employees);
 
-        members.appendChild(card);
+        article.appendChild(card);
     });
 }

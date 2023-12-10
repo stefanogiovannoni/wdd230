@@ -258,3 +258,97 @@ form label.top, form div{
 	padding-top: 1rem;	
 	text-align: left;
 }
+
+/*directory*/ 
+section {
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 0.5rem;
+	background-color: #eee;
+	
+}
+
+
+section h3 {
+	font-size: 1.5rem;
+}
+
+section p {
+	font-weight: 600;
+	font-size: smaller;
+}
+
+section a {
+	font-family: "Roboto", Arial, sans-serif;
+	font-size: 0.5rem;
+	color: navy;
+	
+}
+section  {
+	font-size: 1.5rem;
+}
+
+
+
+section a {
+	font-size: 1rem;
+	color: navy;
+	
+}
+
+
+
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(265px, 1fr));
+	align-items: center;
+}
+
+.grid section {
+	text-align: center;
+}
+
+
+.grid img {
+	border: 1px solid #fff;
+	box-shadow: 0 0 10px #333;
+	align-items: center;
+	width: 50%;
+}
+
+.grid section > * {
+	margin: 0.1rem;
+}
+
+.grid h3 {
+	font-family: "Caveat", cursive;
+}
+
+.list {
+	display: flex;
+	flex-direction: column;
+}
+
+.list section {
+	display: grid;
+	grid-template-rows: 1.5fr 1fr 1fr 1fr 1fr;
+	margin: 0;
+	text-align: left;
+}
+
+
+
+.list section img {
+	display: none; 
+}
+section h2 {
+	font-size: 100%;
+}
+section p {
+	font-weight: 100;
+	font-size: smaller;
+}
+.list section:nth-child(even) {
+	background-color: white;
+}
+
