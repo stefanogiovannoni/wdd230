@@ -28,14 +28,21 @@ main {
     padding: 0 2%;
     min-height: 20rem;
 }
-.ca{
+.ca a{
 	display: block;
+	position: relative;
     color:#fff;
     text-align: center;
     padding: 1rem;
+	font-size: 20px;
+	
 }
 .ca:hover{
 	border: 2px solid #fff;
+}
+.netimg{
+	width: 75%; 
+	height:"auto";
 }
 footer{
     color: white;
@@ -64,6 +71,7 @@ background-color: red;
 #sidebar{
 	grid-area: sidebar;
 	background-color: blue;
+	color: white;
 }
 #content1{
 	grid-area: content1;
@@ -351,4 +359,53 @@ section p {
 .list section:nth-child(even) {
 	background-color: white;
 }
+
+#content2{
+	color: white;
+}
+
+/*BANNER*/
+
+#banner {
+    position: fixed;
+    top: 35%;
+    left: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    min-width: 300px;
+    max-width: 700px;
+    opacity: 0.9;
+    z-index: 1;
+}
+
+#close::before {
+    content: "❌";
+	
+}
+
+#close {
+    margin: 1rem;
+    border: none;
+    font-size: 3rem;
+    font-weight: bold;
+    
+}
+
+#close:hover {
+    cursor: pointer;
+	background-color: #445ba9;
+}
+
+#banner p {
+    margin: .25rem 0;
+    border-radius: 10px;
+    padding: .5rem 1rem;
+    font-size: 1.5rem;
+    background-color: #2fd0d3;
+	color: white;
+}
+
 
