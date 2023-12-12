@@ -1,11 +1,12 @@
 const forecastDesc = document.querySelector("#forecast");
-const forecurl = "https://pro.openweathermap.org/data/2.5/forecast/hourly?lat=49.75&lon=6.64&appid=a1f42a7299d9f068f7f44929a709c902";
+const forecurl = "https://api.openweathermap.org/data/2.5/forecast?lat=49.75&lon=6.64&appid=a1f42a7299d9f068f7f44929a709c902";
 
 async function foreAPI() {
     try {
         const response = await fetch(forecurl);
         if (response.ok) {
             const data = await response.json();
+            console.log(data);
             displayForecast(data);
         } else {
             throw Error(await response.text());
