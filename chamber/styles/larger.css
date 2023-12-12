@@ -10,17 +10,19 @@
 		text-align: center;
 	}
     nav {
-        display: block;
-        justify-content: space-around;
+        display: flex;
+        text-align: center;
+		align-items: center;
 		background-color: #396E94;
-		padding: 0.5em; 
 		
-		width: 100%;
+		
+		
     }
 
     nav a{
         flex: 1 1 100%;
 		width: 100%;
+		margin: 0 auto;
     }
 	.page{
 		display: grid;
@@ -54,26 +56,26 @@
 	#m img:hover {box-shadow: 0 0 50px #333;}
 	#m{
 		grid-area: m;
-	background-color: red;
-	color:white;
+	
+	color:black;
 	}
 	#d{
 		grid-area: d;
-		background-color: blue;
+		background-color: #A43312;
 		color:white;
 	}
 	#v{
 		grid-area: v;
-		background-color: violet;
+		background-color: #A43312;
 		color:white;
 	}
 	#s{
 		grid-area: s;
-		background-color: yellow;
+		background-color:#A43312;
 	}
 	#c{
 		grid-area: c;
-		background-color: green;
+		background-color:#A43312;
 		color:white;
 	}
 	

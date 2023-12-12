@@ -1,16 +1,12 @@
-const currentTempp = document.querySelector("#current-temp2");
-const weatherIconn = document.querySelector("#weather-icon2");
-const captionDescc = document.querySelector("figcaption");
+const forecastDesc = document.querySelector("#forecast");
+const forecurl = "https://pro.openweathermap.org/data/2.5/forecast/hourly?lat=49.75&lon=6.64&appid=a1f42a7299d9f068f7f44929a709c902";
 
-const url = "https://pro.openweathermap.org/data/2.5/forecast/hourly?lat=49.75&lon=6.64&appid=ad9a5c72487edbdde62b86d508b682bc"
-
-async function apiFetch() {
+async function foreAPI() {
     try {
-        const response = await fetch(url);
+        const response = await fetch(forecurl);
         if (response.ok) {
             const data = await response.json();
-            console.log(data);
-            displayResults(data);
+            displayForecast(data);
         } else {
             throw Error(await response.text());
         }
@@ -19,15 +15,41 @@ async function apiFetch() {
     }
 }
 
-function displayResults(data) {
-    
-    currentTempp.innerHTML = `${data.main.temp}&deg;F`;
-    const iconsrc =  `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
-    let desc = data.weather[0].description;
-    weatherIconn.setAttribute('src', iconsrc);
-    weatherIconn.setAttribute('alt', `png of ${desc}`);
-    captionDescc.textContent = `${desc}`;
+
+function displayForecast(data) {
+    const forecastData = data.fdata;
+
+    const forecastDays = forecastData.slice(1, 4);
+
+    forecastDays.forEach(day => {
+        const forecastdatadays = createForecastData(day);
+        forecastDesc.appendChild(forecastdatadays);
+    });
 
 }
 
-apiFetch();
+function createForecastData(fdata) {
+    
+    let card = document.createElement("div");
+    let day = document.createElement("p");
+    let temp = document.createElement("p");
+    let img = document.createElement("img");
+    let desc = document.createElement("p");
+
+    const dayn = new Date(fdata.dt * 1000)
+
+    day.textContent = `${dayn}`;
+    temp.textContent = `${fdata.main.temp}`;
+    img.setAttribute("src",`https://openweathermap.org/img/w/${fdata.weather[0].icon}.png`);
+    img.setAttribute("alt", `${fdata.weather[0].description}`);
+    desc.textContent = `${fdata.weather[0].main}`;
+
+    card.appendChild(day);
+    card.appendChild(temp);
+    card.appendChild(img);
+    card.appendChild(desc);
+
+    return card;
+}
+
+foreAPI();

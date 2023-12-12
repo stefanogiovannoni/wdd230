@@ -3,16 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Palermo Chamber of Commerce Official Website </title>
+    <meta name="author" content="Stefano Giovanoni">
+    <meta name="description" content="Palermo Chamber of Commerce Website">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link href="styles/base.css" rel="stylesheet" /> 
+    <link href="styles/larger.css" rel="stylesheet" />
+    <link href="styles/normalize.css" rel="stylesheet" /> 
+    <link href="images/favicon.ico" rel="icon"  type="image/x-icon" >
     <meta property="og:url"  content="https://stefanogiovannoni.github.io/wdd230/" />
     <meta property="og:type" content="website" />
     <meta property="og:title"  content=">Palermo Chamber of Commerce" />
-    <meta property="og:image" content="https://th.bing.com/th/id/OIP.eUs9n6okjaqnniOXgPb3LQHaDt?pid=ImgDet&rs=1" />
-    <title> Palermo Chamber of Commerce</title>
-    <link href="styles/normalize.css" rel="stylesheet" /> 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link href="images/favicon.ico" rel="icon"  type="image/x-icon" >
-    <link href="styles/base.css" rel="stylesheet" /> 
-    <link href="styles/larger.css" rel="stylesheet" /> 
+    <meta property="og:description" content="Offical Palermo Chamber of Commerce. The Palermo Chamber of Commerce serves the city as the main host and leader in promoting economic growth. We help communities to strenghen relationships to improve our local economies and our way of living by hosting presentations alongside with networking events.">
+    <meta property="og:image" content="https://th.bing.com/th/id/OIP.eUs9n6okjaqnniOXgPb3LQHaDt?pid=ImgDet&rs=1" /> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
@@ -34,41 +37,37 @@
     </nav>
     <main>
         <div id="banner">
-            <p> Wednesday at 7:00 PM Meet and Greet. Come!! <button id="close"></button></p>
-            
+            <p> Wednesday at 7:00 PM Meet and Greet. Come!! <button id="close"></button></p>           
         </div>
         <div class="page">
             <section id="main">
             <h2>Our Purpouse</h2>
             <p>The Palermo Chamber of Commerce serves the city as the main host and leader in promoting economic growth. We help communities to strenghen relationships to improve our local economies and our way of living by hosting presentations alongside with networking events.</p>
-            <img class="netimg" src="images/networkingevent.jpeg" alt="Networking Event" >
+            <img class="netimg" src="images/networkingevent.webp" alt="Networking Event" >
             </section>
             <section id="sidebar">
-                <p>Sidebar</p>
-                <p class="ca"><a href="join.html" title="Form">Join Us</a></p>
+                <p id="ca"><a href="join.html" title="Form">Join Us</a></p>
             </section>
             <section id="content1">
-                <p>Events section</p>
+                <h3>Events section</h3>
                 <p>12/15 GoGreen in Palermo</p>
                 <p>12/20 Toys donations</p>
             </section>
             <section id="content2">
                 <h3> Current Weather</h3>
-                <p>Ciudad Autonoma de Buenos Aires, Argentina</p>
-                <p><span id="current-temp"></span></p>
-                <figure>
-                <img id="weather-icon" src=" " alt=" ">
-                <figcaption></figcaption>
-                </figure>
-                <h3> Forecast</h3>
-                <p><span id="current-temp2"></span></p>
-                <figure>
-                <img id="weather-icon2" src=" " alt=" ">
-                <figcaption></figcaption>
-                </figure>
+                    <div id="currentweather">
+                        <p>Ciudad Autonoma de Buenos Aires, Argentina</p>
+                        <p><span id="current-temp"></span></p>
+                        <figure>
+                        <img id="weather-icon" src=" " alt="weather icon ">
+                        <figcaption></figcaption>
+                        </figure>
+                    </div>
+                <h3> Forecast</h3>    
+                    <div id="forecast"></div>
             </section>
             <section id="content3">
-                <p>Spotlight</p>
+                <h3>Spotlight</h3>
                 <p class="influential"><a href="http://abc.xyz/" title="Alphabet">Alphabet</a></p>
                 <p class="influential"><a href="https://www.amazon.com" title="Form">Amazon</a></p>
                 <p class="influential"><a href="https://www.globant.com/" title="Form">Globant</a></p>
@@ -86,6 +85,6 @@
     <script src="scripts/weather.js"></script>
     <script src="scripts/forecast.js"></script>
     <script src="scripts/banner.js"></script>
-    <script src="scripts/spotlight.js"></script>    
+    <script src="scripts/forecast.js"></script>    
 </body>
 </html>

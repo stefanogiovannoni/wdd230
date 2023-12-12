@@ -1,3 +1,8 @@
+:root{
+	--color:  #777;
+	--diplay: flex;
+	--width: 100%;
+}
 *{
     margin: 5px;
     box-sizing: border-box;
@@ -10,39 +15,55 @@ body{
 header{
     background-color: green;
     color: white;
-    padding: 1em;
-}
-
-
-nav a{
-    display: block;
-    color:#fff;
-    text-align: center;
     padding: 1rem;
 }
-    
-nav a:hover{
-    border: 2px solid #fff;
+
+
+.navigation {
+	display: var(--diplay);
+	flex-direction: column;
+	list-style: none;
+	color: #fff;
+	background-color: black;
+    margin: 0 auto;
+    max-width: var(--width);
+	padding: 1rem;
 }
-main {
-    padding: 0 2%;
-    min-height: 20rem;
+.navigation li {
+	display: none;
 }
-.ca a{
+.navigation li a {
 	display: block;
-	position: relative;
-    color:#fff;
-    text-align: center;
-    padding: 1rem;
-	font-size: 20px;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+}
+.navigation li a:hover {
+	background-color: #bbb;
+	color: #333;
+	font-weight: 700;
+}
+#ca a {
+	display: var(--diplay);
+	flex-direction: column;
+	list-style: none;
+	text-align: center;
+	color: #fff;
+    margin: 0 auto;
+    font-size: larger;
+	padding: 1rem;
+	font-size: 1.5rem;
 	
 }
-.ca:hover{
-	border: 2px solid #fff;
+#ca a:hover{
+	background-color: #bbb;
+	color: #333;
+	font-weight: 700;
 }
 .netimg{
 	width: 75%; 
-	height:"auto";
+	height: auto;
 }
 footer{
     color: white;
@@ -66,24 +87,28 @@ footer{
 
 #main{
 	grid-area: main;
-background-color: red;
+background-color: #e8e3e3;
 }
 #sidebar{
 	grid-area: sidebar;
-	background-color: blue;
+	background-color: #396E94;
 	color: white;
+	
 }
 #content1{
 	grid-area: content1;
-	background-color: yellow;
+	background-color:#A43312;
+	color: white;
 }
 #content2{
 	grid-area: content2;
-	background-color: green;
+	background-color: #A43312;
+	color: white;
 }
 #content3{
 	grid-area: content3;
-	background-color: violet;
+	background-color: #A43312;
+	color: white;
 }
 
 .discoverpage{
@@ -104,7 +129,7 @@ background-color: red;
 
 #m{
 	grid-area: m;
-	background-color: red;
+	background-color: #e8e3e3;
 	padding-bottom: 10px;
 	color:white;
 }
@@ -116,27 +141,29 @@ background-color: red;
 	align-content: center;
 	width: 90%;
     height: auto;
-	
 }
-
+#m img:hover {
+	box-shadow: 0 0 50px #333;
+}
 
 #d{
 	grid-area: d;
-	background-color: blue;
+	background-color:#A43312;
 	color:white;
 }
 #v{
 	grid-area: v;
-	background-color: violet;
+	background-color: #A43312;
 	color:white;
 }
 #s{
 	grid-area: s;
-	background-color: yellow;
+	background-color:#A43312;
+	color:white;
 }
 #c{
 	grid-area: c;
-	background-color: green;
+	background-color:#A43312;
 	color:white;
 }
 #menu {
@@ -227,7 +254,7 @@ form input.submitBtn{
 
 form input.submitBtn:hover{
 	border:none;
-	background-color: blue;
+	background-color: #A43312;
 	color: white;
 	border-radius: 1rem;
 	padding: .75rem 1.5rem;
@@ -404,8 +431,18 @@ section p {
     border-radius: 10px;
     padding: .5rem 1rem;
     font-size: 1.5rem;
-    background-color: #2fd0d3;
+    background-color: green;
 	color: white;
+}
+
+.influential a{
+	color: white;
+}
+
+.influential a:hover{
+	color: blue;
+	font-weight: bold;
+	font-size: larger;
 }
 
 
