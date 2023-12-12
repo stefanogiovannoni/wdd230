@@ -49,16 +49,17 @@ header{
 	flex-direction: column;
 	list-style: none;
 	text-align: center;
-	color: #fff;
+	color: black;
     margin: 0 auto;
     font-size: larger;
 	padding: 1rem;
 	font-size: 1.5rem;
+	background-color: yellow;
 	
 }
 #ca a:hover{
-	background-color: #bbb;
-	color: #333;
+	background-color:#A43312;
+	color: white;
 	font-weight: 700;
 }
 .netimg{
@@ -142,9 +143,7 @@ background-color: #e8e3e3;
 	width: 90%;
     height: auto;
 }
-#m img:hover {
-	box-shadow: 0 0 50px #333;
-}
+
 
 #d{
 	grid-area: d;

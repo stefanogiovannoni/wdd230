@@ -132,4 +132,7 @@
 	.grid a {
 		font-size: 50%;
 	}
+	.netimg:hover{
+	box-shadow: 0 0 50px #333;
+	}
 }
